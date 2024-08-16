@@ -1,0 +1,141 @@
+module Base
+{
+    item HashOil
+    {
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.5,
+        Icon = shatter,
+        Wet = FALSE,
+        DisplayName = Shatter,
+    }
+    item HotWeedPress
+    {
+        DisplayCategory = Junk,
+        Type = Normal,
+        Weight = 1.5,
+        Icon = weedpress,
+        Wet = FALSE,
+        DisplayName = Weed Press,
+    }
+    item ButaneFuel
+    {
+        DisplayGategory = Junk,
+        Type = Normal,
+        Weight = 0.05,
+        Icon = butane,
+        Wet = FALSE,
+        DisplayName = Butane Fuel,
+    }
+    item SealedPipe
+    {
+        DisplayCategory = Junk,
+        Type = Normal,
+        Weight = 1.0,
+        Icon = SealedPipe,
+        Wet = FALSE,
+        DisplayName = Sealed Pipe,
+    }
+    item CBDOil
+    {
+        DisplayCategory = Junk,
+        Type = Food,
+        Weight = 0.03,
+        Icon = CBDOil,
+        Wet = FALSE,
+        DisplayName = CBD Oil,
+    }
+    item THCOil
+    {
+        DisplayCategory = Junk,
+        Type = Food,
+        Weight = 0.03,
+        Icon = THCOil,
+        Wet = FALSE,
+        DisplayName = THC Oil,
+    }
+    recipe Green Oil Extraction
+    {
+        destroy OunceOfGreenCrack,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe purple Oil Extraction
+    {
+        destroy OunceOfPurpleKush,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe North Oil Extraction
+    {
+        destroy OunceOfNorthernLights,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Pineapple Oil Extraction
+    {
+        destroy OunceOfPineappleExpress,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Bruce Oil Extraction
+    {
+        destroy OunceOfBruceBanner,
+        keep HotWeedPress,
+
+        Result:HashOil=5,
+        Time:1200.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Weed Press
+    {
+        ScarpElectronics=3,
+        ScrapMetal,
+        SpareEngineParts,
+
+        Result:HotWeedPress,
+        Time:2500.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Sealed Pipe
+    {
+        metalpipe,
+        scrapmetal=2,
+
+        Result:SealedPipe,
+        Time:250.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe CBD Oil
+    {
+        ButaneFuel,
+        SealedPipe,
+        HashOil=9,
+
+        Result:CBDOil=6,
+        Time:2500.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe THC Oil
+    {
+        ButaneFuel,
+        SealedPipe,
+        HashOil=7,
+
+        Result:THCOil=5,
+        Time:2500.0,
+        NeedToBeLearn:FALSE,
+    }
+}

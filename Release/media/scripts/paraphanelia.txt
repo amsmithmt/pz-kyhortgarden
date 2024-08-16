@@ -1,0 +1,212 @@
+module Base
+{
+    item Grinder
+    {
+        DisplayCategory = Junk,
+        Weight = 0.02,
+        Type = Normal,
+        DisplayName = Herb Grinder,
+        Icon = grinder,
+        Wet = FALSE,
+    }
+    item ZipLock
+    {
+        DisplayCategory = Junk,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = ZipLock Bag,
+        Icon = ZipLock,
+        Wet = FALSE,
+    }
+    item OunceOfGreenCrack
+    {
+        DisplayCategory = Food,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Ounce Of Green Crack,
+        Icon = ounceofweed,
+        Wet = FALSE,
+    }
+    item OunceOfPurpleKush
+    {
+        DisplayCategory = Food,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Ounce Of Purple Kush,
+        Icon = ounceofweed,
+        Wet = FALSE,
+    }
+    item OunceOfNorthernLights
+    {
+        DisplayCategory = Food,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Ounce Of Northern Lights,
+        Icon = ounceofweed,
+        Wet = FALSE,
+    }
+    item OunceOfPineappleExpress
+    {
+        DisplayCategory = Food,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Ounce Of Pineapple Express,
+        Icon = ounceofweed,
+        Wet = FALSE,
+    }
+    item OunceOfBruceBanner
+    {
+        DisplayCategory = Food,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Ounce Of Bruce Banner,
+        Icon = ounceofweed,
+        Wet = FALSE,
+    }
+    recipe Break Down Green Crack for Seeds
+    {
+        destroy GreenCrack,
+        keep Grinder,
+
+        Result:GreenCrackSeed,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Break Down Purple Kush for Seeds
+    {
+        destroy PurpleKush,
+        keep Grinder,
+
+        Result:PurpleKushSeed,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Break Down Northern Lights for Seeds
+    {
+        destroy NorthernLights,
+        keep Grinder,
+
+        Result:NorthernLightsSeed,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Break Down Pineapple Express for Seeds
+    {
+        destroy PineappleExpress,
+        keep Grinder,
+
+        Result:PineappleExpressSeed,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Break Down Bruce Banner for Seeds
+    {
+        destroy BruceBanner,
+        keep Grinder,
+
+        Result:BruceBannerSeed,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Ounce Of Green Crack
+    {
+        destroy GreenCrack=10,
+        destroy ZipLock=1,
+
+        Result:OunceOfGreenCrack,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Ounce Of Purple Kush
+    {
+        destroy PurpleKush=10,
+        destroy ZipLock=1,
+
+        Result:OunceOfPurpleKush,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Ounce Of Northern Lights
+    {
+        destroy NorthernLights=10,
+        destroy ZipLock=1,
+
+        Result:OunceOfNorthernLights,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Ounce Of Pineapple Express
+    {
+        destroy PineappleExpress=10,
+        destroy ZipLock=1,
+
+        Result:OunceOfPineappleExpress,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Ounce Of Bruce Banner
+    {
+        destroy BruceBanner=10,
+        destroy ZipLock=1,
+
+        Result:OunceOfBruceBanner,
+        Time:300.0,
+        NeedToBeLearn:FALSE,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Bruce Banner
+    {
+        destroy OunceOfBruceBanner,
+
+        Result:BruceBanner=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Pineapple Express
+    {
+        destroy OunceOfPineappleExpress,
+
+        Result:PineappleExpress=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Northern Lights
+    {
+        destroy OunceOfNorthernLights,
+
+        Result:NorthernLights=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Purple Kush
+    {
+        destroy OunceOfPurpleKush,
+
+        Result:PurpleKush=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+    recipe Break Down Ounce Of Green Crack
+    {
+        destroy OunceOfGreenCrack,
+
+        Result:GreenCrack=10,
+        Time:250.0,
+        NeedToBeLearn:False,
+        Category:Health,
+    }
+
+}

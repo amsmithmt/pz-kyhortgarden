@@ -1,0 +1,166 @@
+module Base
+{
+    /***********ITEMS**************/
+
+    item CigaretteCellophaneWrapper
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.01,
+        Wet = FALSE,
+        Icon = cellophane,
+        DisplayName = Cigarette Cellophane Wrapper,
+        SurvivalGear = TRUE,
+    }
+    item PacketOfGreenCrackSeeds
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = cannabisseedpack,
+        DisplayName = Packet Of Green Crack Seeds,
+        SurvivalGear = TRUE,
+    }
+    item PacketOfPurpleKushSeeds
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = cannabisseedpack,
+        DisplayName = Packet Of Purple Kush Seeds,
+        SurvivalGear = TRUE,
+    }
+    item PacketOfNorthernLightsSeeds
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = cannabisseedpack,
+        DisplayName = Packet Of Northern Lights Seeds,
+        SurvivalGear = TRUE,
+    }
+    item PacketOfPineappleExpressSeeds
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = cannabisseedpack,
+        DisplayName = Packet Of Pineapple Express Seeds,
+        SurvivalGear = TRUE,
+    }
+    item PacketOfBruceBannerSeeds
+    {
+        DisplayCategory = Gardening,
+        Type = Normal,
+        Weight = 0.05,
+        Wet = FALSE,
+        Icon = cannabisseedpack,
+        DisplayName = Packet Of Bruce Banner Seeds,
+        SurvivalGear = TRUE,
+    }
+
+    /*************RECIPE****************/
+
+    recipe Create Cigarette Cellophane Wrapper
+    {
+        Cigarettes=20,
+
+        Result:CigaretteCellophaneWrapper,
+        Time:100.0,
+        NeedToBeLearn:False,
+    }
+    recipe Create Packet of Green Crack Seeds
+    {
+        CigaretteCellophaneWrapper,
+        GreenCrackSeed=6,
+
+        Result:PacketOfGreenCrackSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Create Packet of Purple Kush Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        PurpleKushSeed=6,
+
+        Result:PacketOfPurpleKushSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Create Packet of Northern Lights Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        NorthernLightsSeed=6,
+
+        Result:PacketOfNorthernLightsSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Create Packet of Pineapple Express Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        PineappleExpressSeed=6,
+
+        Result:PacketOfPineappleExpressSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Create Packet of Bruce Banner Seeds
+    {
+        Destroy CigaretteCellophaneWrapper,
+        BruceBannerSeed=6,
+
+        Result:PacketOfBruceBannerSeeds,
+        Time:150.0,
+        NeedToBeLearn:False,
+    }
+    recipe Open Packet of Green Crack Seeds
+    {
+        destroy PacketOfGreenCrackSeeds,
+
+        Result:GreenCrackSeed=6,
+        Time:150.0,
+        Category:Farming,
+        NeedToBeLearn:False
+    }
+    recipe Open Packet of Purple Kush Seeds
+    {
+        destroy PacketOfPurpleKushSeeds,
+
+        Result:PurpleKushSeed=6,
+        Time:150.0,
+        Category:Farming,
+        NeedToBeLearn:False
+    }
+    recipe Open Packet of Northern Lights Seeds
+    {
+        destroy PacketOfNorthernLightsSeeds,
+
+        Result:NorthernLightsSeed=6,
+        Time:150.0,
+        Category:Farming,
+        NeedToBeLearn:False
+    }
+    recipe Open Packet of Pineapple Express Seeds
+    {
+        destroy PacketOfPineappleExpressSeeds,
+
+        Result:PineappleExpressSeed=6,
+        Time:150.0,
+        Category:Farming,
+        NeedToBeLearn:False
+    }
+    recipe Open Packet of Bruce Banner Seeds
+    {
+        destroy PacketOfBruceBannerSeeds,
+
+        Result:BruceBannerSeed=6,
+        Time:150.0,
+        Category:Farming,
+        NeedToBeLearn:False
+    }
+}

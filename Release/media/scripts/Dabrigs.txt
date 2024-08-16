@@ -1,0 +1,70 @@
+module Base {
+
+    item DabRig
+    {
+        DisplayCategory = Junk,
+        Type = Normal,
+        Weight = 0.5,
+        DisplayName = Dab Rig,
+        Icon = DabRig,
+        Wet = FALSE,
+    }
+    item DabRigAttachment
+    {
+        DisplayCategory = Junk,
+        Type = Normal,
+        Weight = 0.02,
+        DisplayName = Dab Rig Attachment,
+        Icon = DabNail,
+        Wet = FALSE,
+    }
+    item DabRigWithShatter
+    {
+        DisplayCategory = Food,
+        Count = 1,
+        Weight = 0.5,
+        Type = Food,
+        CustomContextMenu = Smoke,
+        RequireInHandOrInventory = Matches/Lighter,
+        CantBeFrozen = TRUE,
+        OnEat = OnEat_Cigarettes,
+        EatType = Cigarettes,
+        DisplayName = Filled Dab Rig,
+        Icon = FilledDabRig,
+        Wet = False,
+        Medical = TRUE,
+        Packaged = False,
+        HungerChange = +0.2,
+        ThirstChange = +0.3,
+        StressChange = -17,
+        BoredomChange = -17,
+        UnhappyChange = -17,
+        CustomEatSound = ,
+    }
+    recipe Dab Rig
+    {
+        destroy GlassWaterPipe,
+        destroy DabRigAttachment,
+
+        Result:DabRig,
+        Time:250.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Dab Rig into Bong
+    {
+        destroy DabRig,
+
+        Result:GlassWaterPipe,
+        Time:250.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe Dab Rig With Shatter
+    {
+        keep DabRig,
+        HashOil=1,
+
+        Result:DabRigWithShatter,
+        Time:200.0,
+        NeedToBeLearn:FALSE,
+    }
+}

@@ -1,0 +1,46 @@
+module Base
+{
+    item CBDPills
+    {
+        DisplayCategory = FirstAid,
+        Type = Drainable,
+        Weight = 0.04,
+        Icon = CBDPill,
+        Wet = FALSE,
+        DisplayName = CBD Pill,
+        Tooltip = Tooltip_Painkillers,
+        UseDelta = 0.1,
+        Medical = TRUE,
+    }
+    item CBDBandage
+    {
+        DisplayCategory = Junk,
+        Type = Food,
+        Weight = 0.002,
+        Icon = CBDBandage,
+        Wet = FALSE,
+        DisplayName = CBD Bandage,
+        ReplaceOnUse = RippedSheetsDirty,
+        BandagePower = 4,
+        Tooltip = Tooltip_RippedSheets,
+        FabricType = Cotton,
+    }
+    recipe CBD Pills
+    {
+        Pills,
+        CBDOil=7,
+
+        Result:CBDPill,
+        Time:1000.0,
+        NeedToBeLearn:FALSE,
+    }
+    recipe CBD Bandage
+    {
+        RippedSheets=2,
+        CBDOil=2,
+
+        Result:CBDBandage,
+        Time:100.0,
+        NeedToBeLearn:FALSE,
+    }
+}
