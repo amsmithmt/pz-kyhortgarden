@@ -1,14 +1,13 @@
 require "Farming/farming_vegetableconf"
 
-MoCropsconf = {};
+KYHortconf = {};
 
 -- Pepper
 -- Need 6 seeds
 -- Water lvl over 65
 -- Need 4 weeks to grow (112h per phase)
-MoCropsconf.growNewCrop = function(planting, nextGrowing, updateNbOfGrow)
+KYHortconf.growNewCrop = function(planting, nextGrowing, updateNbOfGrow)
 	local nbOfGrow = planting.nbOfGrow;
-
 	local water = farming_vegetableconf.calcWater(planting.waterNeeded, planting.waterLvl);
 	local diseaseLvl = farming_vegetableconf.calcDisease(planting.mildewLvl);
 	if(nbOfGrow <= 0) then -- young
@@ -71,7 +70,7 @@ farming_vegetableconf.props["GreenCrack"].waterLvl = 65;
 farming_vegetableconf.props["GreenCrack"].timeToGrow = ZombRand(56, 62); -- 56, 62
 farming_vegetableconf.props["GreenCrack"].vegetableName = "GreenCrack";
 farming_vegetableconf.props["GreenCrack"].seedName = "GreenCrackSeed";
-farming_vegetableconf.props["GreenCrack"].growCode = "MoCropsconf.growNewCrop";
+farming_vegetableconf.props["GreenCrack"].growCode = "KYHortconf.growNewCrop";
 farming_vegetableconf.props["GreenCrack"].seedPerVeg = 1;
 farming_vegetableconf.props["GreenCrack"].minVeg = 3;
 farming_vegetableconf.props["GreenCrack"].maxVeg = 5;
@@ -97,7 +96,7 @@ farming_vegetableconf.props["PurpleKush"].waterLvl = 65;
 farming_vegetableconf.props["PurpleKush"].timeToGrow = ZombRand(89, 103); --89, 103
 farming_vegetableconf.props["PurpleKush"].vegetableName = "PurpleKush";
 farming_vegetableconf.props["PurpleKush"].seedName = "PurpleKushSeed";
-farming_vegetableconf.props["PurpleKush"].growCode = "MoCropsconf.growNewCrop";
+farming_vegetableconf.props["PurpleKush"].growCode = "KYHortconf.growNewCrop";
 farming_vegetableconf.props["PurpleKush"].seedPerVeg = 2;
 farming_vegetableconf.props["PurpleKush"].minVeg = 4;
 farming_vegetableconf.props["PurpleKush"].maxVeg = 5;
@@ -125,7 +124,7 @@ farming_vegetableconf.props["NorthernLights"].waterLvl = 55;
 farming_vegetableconf.props["NorthernLights"].timeToGrow = ZombRand(89, 103); --89, 103
 farming_vegetableconf.props["NorthernLights"].vegetableName = "NorthernLights";
 farming_vegetableconf.props["NorthernLights"].seedName = "NorthernLightsSeed";
-farming_vegetableconf.props["NorthernLights"].growCode = "MoCropsconf.growNewCrop";
+farming_vegetableconf.props["NorthernLights"].growCode = "KYHortconf.growNewCrop";
 farming_vegetableconf.props["NorthernLights"].seedPerVeg = 3;
 farming_vegetableconf.props["NorthernLights"].minVeg = 4;
 farming_vegetableconf.props["NorthernLights"].maxVeg = 5;
@@ -153,7 +152,7 @@ farming_vegetableconf.props["PineappleExpress"].waterLvl = 55;
 farming_vegetableconf.props["PineappleExpress"].timeToGrow = ZombRand(89, 103); --89, 103
 farming_vegetableconf.props["PineappleExpress"].vegetableName = "PineappleExpress";
 farming_vegetableconf.props["PineappleExpress"].seedName = "PineappleExpressSeed";
-farming_vegetableconf.props["PineappleExpress"].growCode = "MoCropsconf.growNewCrop";
+farming_vegetableconf.props["PineappleExpress"].growCode = "KYHortconf.growNewCrop";
 farming_vegetableconf.props["PineappleExpress"].seedPerVeg = 2;
 farming_vegetableconf.props["PineappleExpress"].minVeg = 4;
 farming_vegetableconf.props["PineappleExpress"].maxVeg = 5;
@@ -181,7 +180,7 @@ farming_vegetableconf.props["BruceBanner"].waterLvl = 35;
 farming_vegetableconf.props["BruceBanner"].timeToGrow = ZombRand(35, 45); --89, 103
 farming_vegetableconf.props["BruceBanner"].vegetableName = "BruceBanner";
 farming_vegetableconf.props["BruceBanner"].seedName = "BruceBannerSeed";
-farming_vegetableconf.props["BruceBanner"].growCode = "MoCropsconf.growNewCrop";
+farming_vegetableconf.props["BruceBanner"].growCode = "KYHortconf.growNewCrop";
 farming_vegetableconf.props["BruceBanner"].seedPerVeg = 2;
 farming_vegetableconf.props["BruceBanner"].minVeg = 3;
 farming_vegetableconf.props["BruceBanner"].maxVeg = 4;

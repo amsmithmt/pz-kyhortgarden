@@ -1,6 +1,6 @@
 name=ST-KYHortGarden
 poster=poster.png
-id=legalizeit
+id=ST-KYHortGarden
 description= [h1] Gardening and horticulture in Kentucky [/h1]
 description=
 description=             The world has gone to hell in a handbasket but that doesn't mean we can't enjoy some of the more simple pleasures in life. 
@@ -17,15 +17,14 @@ description=             [list]
 description=             [*] Goldenrod
 description=             [/list]
 description=
-description=             [img]https://raw.githubusercontent.com/VeraciousNetwork/PZ-VNWeed/main/docs/images/preview.png[/img]
+description=             [img]https://github.com/amsmithmt/pz-kyhortgarden/blob/main/Release/poster.png?raw=true[/img]
 description=
 description=             [hr]
 description=
 description=
-description=             SourceCode: [url]https://github.com/VeraciousNetwork/PZ-VNWeed[/url]
-description=             Discord :[url]https://discord.gg/ymWb5tfN3P[/url]
+description=             SourceCode: [url]https://github.com/amsmithmt/pz-kyhortgarden/[/url]
 description=             License: MIT
 description=             This mod is OPEN SOURCE, so redistribution and use is mod packs is ALLOWED.
 description=
 description=             [hr]
-pack=VNWeed
+pack=ST-KYHortGarden

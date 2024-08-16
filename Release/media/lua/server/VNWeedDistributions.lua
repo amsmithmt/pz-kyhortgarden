@@ -1,43 +1,43 @@
 require 'Items/SuburbsDistributions';
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "FoodItem.GreenCrack");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "FoodItem.PurpleKush");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "FoodItem.NorthernLights");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "FoodItem.PineappleExpress");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "FoodItem.BruceBanner");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.RollingPapers");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.GlassTobaccoPipe");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.GlassWaterPipe");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.BluntWrap");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.HotWeedPress");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "JunkItem.Grinder");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "DabRigAttachment");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["postbox"].items, "DabRig");
-table.insert(SuburbsDistributions["all"]["postbox"].items, 1);
+table.insert(SuburbsDistributions["all"]["postbox"].items, 50);
 
 table.insert(SuburbsDistributions["all"]["crate"].items, "JunkItem.BluntWrap");
 table.insert(SuburbsDistributions["all"]["crate"].items, 1);
